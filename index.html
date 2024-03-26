@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>당신의 게임 제목</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .game-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .game-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .game-description {
+            flex: 1 1 300px;
+            font-size: 18px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        .btn-download {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-download:hover {
+            background-color: #45a049;
+        }
+        .game-screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .game-screenshot {
+            max-width: calc(33.33% - 20px);
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="game-title">
+          SpringFrog In The Rain
+        </h1>
+        <center><img class="app-icon" src="static/AppIcon.png" alt="App Icon" width="150px" height="150px"></center>
+        <div class="game-info">
+            <center class="game-description">
+              Adventures of 'SpringFrog' leaving to investigate the threat posed to peaceful frog villages!<br>
+              Shall we leave together??<br>
+              Jump with the 'SpringFrog'! Jump!
+            </center>
+        </div>
+        <div class="game-screenshots">
+            <img class="game-screenshot" src="static/Screenshot/screenshot1.jpg" alt="Game Screenshot1">
+            <img class="game-screenshot" src="static/Screenshot/screenshot2.jpg" alt="Game Screenshot2">
+            <img class="game-screenshot" src="static/Screenshot/screenshot3.jpg" alt="Game Screenshot3">
+            <!-- 추가적인 스크린샷 이미지 태그를 필요한 만큼 추가할 수 있습니다 -->
+        </div>
+        <center>
+          <p>You can download the game through the link below.</p>
+          <a class="btn-download" href="https://play.google.com/store/apps/details?id=com.zongzong.springfrog">게임 다운로드</a><br><br><br>
+          <a href="README.md">Privacy Policy</a> | 
+          <a href="https://github.com/pjy0121/SpringFrogInTheRain/blob/master/README.md">Privacy Policy (Markdown)</a>
+        </center>
+    </div>
+</body>
+</html>
